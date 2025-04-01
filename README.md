@@ -1,16 +1,20 @@
 # 🎓 Face Recognition Attendance System for RTU Liepaja 
 
-This is a Python-based Face Recognition Attendance System built for a university project by **Akash Veeranmalayil Anil**. It uses computer vision and deep learning techniques to detect and recognize faces in real-time, automatically marking attendance when a registered face is detected.
+This is a Python-based Face Recognition Attendance System built for a university project by **Akash Veeranmalayil Anil**. 
+
+This is a real-time **Face Recognition Attendance System** built with **OpenCV**, **face_recognition**, **Firebase**, and **Flask**. It detects and recognizes faces from a webcam feed, logs attendance, displays student info, and uses **Firebase Storage** and **Realtime Database** for cloud-based storage and synchronization.
 
 ---
 
 ## 🚀 Features
 
 - Real-time face detection and recognition
-- Face encoding using deep learning (`dlib`)
-- Simple and clean UI with `CVZone`
-- Easily extendable for new users/faces
-- Attendance data stored in firebase database
+- Attendance tracking with time logging
+- Student info displayed on custom UI background
+- Firebase Realtime Database for attendance records
+- Firebase Storage for student image retrieval
+- Flask web server with live video streaming
+
 
 ---
 
@@ -20,9 +24,12 @@ This is a Python-based Face Recognition Attendance System built for a university
 - OpenCV
 - Dlib
 - face_recognition
-- CVZone
 - NumPy
+- CVZone
+- Flask
+- Firebase Admin SDK (for Firebase Storage)
 - CMake (for Dlib installation)
+- html
 
 ---
 
@@ -31,19 +38,67 @@ This is a Python-based Face Recognition Attendance System built for a university
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/akashvanil/FACIAL_ATTENDANCE.git
+```
 
-### 2. Install a C++ Compiler
+## 🧰 Install a C++ Compiler
 
-Dlib requires a C++ compiler to build properly. Make sure you have a working compiler installed before proceeding.
+Dlib requires a C++ compiler to be installed before it can build properly.
 
-#### 🪟 Windows
-Install **Visual Studio Build Tools**:
-- Go to [https://visualstudio.microsoft.com/visual-cpp-build-tools/](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
-- During installation, select:
-  - "C++ build tools"
-  - "Windows 10 SDK" or later
+### 🪟 For Windows
+- Download and install **Visual Studio Build Tools**:  
+  [https://visualstudio.microsoft.com/visual-cpp-build-tools/](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+``` bash
+```
 
-#### 🐧 Linux (Ubuntu/Debian)
+## 👍install dependencies
+```
+pip install opencv-python face_recognition numpy cvzone Flask firebase-admin cvzone
+``` bash
+```
+## 🧪 Firebase Configuration
+Go to https://console.firebase.google.com
+Create a new project.
+Go to Project Settings > Service Accounts, and generate a private key.
+Download the JSON file and place it in your project directory.
+Update this line in main.py with your project info:
+
+firebase_admin.initialize_app(cred, {
+    'databaseURL': 'https://your-project.firebaseio.com/',
+    'storageBucket': 'your-project.appspot.com'
+})
+finish setting your database 
 ```bash
-sudo apt update
-sudo apt install build-essential
+```
+## 🧪 How the System Works
+```
+Loads known face encodings from EncodedFile.p
+
+Starts webcam and reads frames in real-time
+
+Uses face_recognition to compare with known encodings
+
+If match is found:
+
+Displays student info
+
+Updates total attendance in Firebase
+
+Uploads and retrieves student image from Firebase Storage
+
+Displays everything on a custom background with UI elements
+
+Serves a live video stream via Flask
+
+```bash
+```
+## 🙌 Author
+Akash Veernmalayil Anil
+
+```bash
+```
+
+## sample screenshot
+
+
+
+
