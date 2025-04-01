@@ -53,8 +53,8 @@ Dlib requires a C++ compiler to be installed before it can build properly.
 ## 👍install dependencies
 ```
 pip install opencv-python face_recognition numpy cvzone Flask firebase-admin cvzone
-``` bash
 ```
+
 ## 🧪 Firebase Configuration
 Go to https://console.firebase.google.com
 Create a new project.
@@ -67,7 +67,7 @@ firebase_admin.initialize_app(cred, {
     'storageBucket': 'your-project.appspot.com'
 })
 finish setting your database 
-```bash
+```
 ```
 ## 🧪 How the System Works
 ```
@@ -89,7 +89,7 @@ Displays everything on a custom background with UI elements
 
 Serves a live video stream via Flask
 
-```bash
+```bas
 ```
 ## 🙌 Author
 Akash Veernmalayil Anil
