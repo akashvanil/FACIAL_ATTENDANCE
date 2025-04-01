@@ -30,5 +30,20 @@ This is a Python-based Face Recognition Attendance System built for a university
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/face-recognition-attendance.git
-cd face-recognition-attendance
+git clone https://github.com/akashvanil/FACIAL_ATTENDANCE.git
+
+### 2. Install a C++ Compiler
+
+Dlib requires a C++ compiler to build properly. Make sure you have a working compiler installed before proceeding.
+
+#### 🪟 Windows
+Install **Visual Studio Build Tools**:
+- Go to [https://visualstudio.microsoft.com/visual-cpp-build-tools/](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+- During installation, select:
+  - "C++ build tools"
+  - "Windows 10 SDK" or later
+
+#### 🐧 Linux (Ubuntu/Debian)
+```bash
+sudo apt update
+sudo apt install build-essential
