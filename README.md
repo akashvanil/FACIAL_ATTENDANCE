@@ -5,7 +5,17 @@ This is a Python-based Face Recognition Attendance System built for a university
 This is a real-time **Face Recognition Attendance System** built with **OpenCV**, **face_recognition**, **Firebase**, and **Flask**. It detects and recognizes faces from a webcam feed, logs attendance, displays student info, and uses **Firebase Storage** and **Realtime Database** for cloud-based storage and synchronization.
 
 ---
+## 📚 Table of Contents
 
+- [🚀 Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📦 Installation](#-installation)
+- [🧰 Install a C++ Compiler](#-install-a-c-compiler)
+- [🪟 For Windows]
+- [👍install dependencies]
+- [🧪Firebase Configuration]
+- [🧪 How the System Works]
+- 
 ## 🚀 Features
 
 - Real-time face detection and recognition
