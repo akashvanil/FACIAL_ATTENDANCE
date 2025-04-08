@@ -11,11 +11,12 @@ This is a real-time **Face Recognition Attendance System** built with **OpenCV**
 - [🛠️ Tech Stack](#️-tech-stack)
 - [📦 Installation](#-installation)
 - [🧰 Install a C++ Compiler](#-install-a-c-compiler)
-- [🪟 For Windows]
-- [👍install dependencies]
-- [🧪Firebase Configuration]
-- [🧪 How the System Works]
-- 
+- [🔥 Firebase Setup](#-firebase-setup)
+- [▶️ Run the App](#️-run-the-app)
+- [🧠 How It Works](#-how-it-works)
+- [📸 Screenshots](#-screenshots)
+
+---
 ## 🚀 Features
 
 - Real-time face detection and recognition
