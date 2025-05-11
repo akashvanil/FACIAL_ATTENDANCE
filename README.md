@@ -109,7 +109,7 @@ Akash Veernmalayil Anil
 ```
 
 ## sample screenshot
-
+https://github.com/akashvanil/FACIAL_ATTENDANCE/issues/1
 
 
 
